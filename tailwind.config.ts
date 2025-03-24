@@ -1,17 +1,17 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+      },
+      maxWidth: {
+        app: '700px',
+      },
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        teste: '#8257e6',
+        teste: '#333',
       },
     },
   },
