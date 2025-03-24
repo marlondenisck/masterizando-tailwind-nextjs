@@ -1,0 +1,13 @@
+{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "extends": ["@rocketseat/eslint-config/web/react"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "singleQuote": true,
+  "semi": false,
+  "jsxSingleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "tabWidth": 2
+}
