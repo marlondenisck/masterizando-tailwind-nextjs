@@ -21,7 +21,7 @@ export default function RootLayout({
           <aside className='border-r border-zinc-200 bg-[green] px-5 py-8'>
             sidebar
           </aside>
-          <main className='bg-[blue] px-4 pb-12 pt-8'>{children}</main>
+          <main className='bg-teste px-4 pt-8 pb-12'>{children}</main>
         </div>
       </body>
     </html>
