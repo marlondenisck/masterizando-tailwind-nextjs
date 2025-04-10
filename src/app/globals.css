@@ -1,7 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --grid-template-columns: minmax(18rem, 20rem) 1fr;
+  --grid-cols-app: minmax(18rem, 20rem) 1fr;
   --max-width: 700px;
-  --color-teste: #333;
 }
