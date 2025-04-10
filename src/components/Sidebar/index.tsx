@@ -1,5 +1,6 @@
 import { Logo } from '@/components/Sidebar/Logo'
 import { Search } from 'lucide-react'
+import { MainNavigation } from '../MainNavigation'
 export function Sidebar() {
   return (
     <aside className='space-y-6 border-r border-zinc-200 px-5 py-8'>
@@ -13,6 +14,7 @@ export function Sidebar() {
           placeholder='Search...'
         />
       </div>
+      <MainNavigation />
     </aside>
   )
 }
