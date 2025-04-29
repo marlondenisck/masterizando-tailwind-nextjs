@@ -1,9 +1,14 @@
+'use client'
+
 import { UploadCloud } from 'lucide-react'
+import { useFileInputContext } from './Root'
 
 export function Trigger() {
+  const { id } = useFileInputContext()
+
   return (
     <label
-      htmlFor='filePhoto'
+      htmlFor={id}
       className='group hover:bg-violet-25 flex flex-1 cursor-pointer flex-col items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500 shadow-sm hover:border-violet-200 hover:text-violet-500'
     >
       <div className='rounded-full border-6 border-zinc-50 bg-zinc-100 p-2 group-hover:border-violet-50 group-hover:bg-violet-100'>
