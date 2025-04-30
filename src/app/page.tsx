@@ -150,6 +150,7 @@ export default function Home() {
             </label>
             <FileInput.Root>
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control
                 multiple
                 accept='.jpg, .jpeg, image/jpeg, .pdf'
