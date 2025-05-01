@@ -2,8 +2,23 @@ import { SettingsTabs } from '@/components/Settings'
 import { Input } from '@/components/Input'
 import { Mail } from 'lucide-react'
 import { FileInput } from '@/components/Form/FileInput'
-
+import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 export default function Home() {
+  const countries = [
+    { value: 'br', label: 'Brazil' },
+    { value: 'us', label: 'United States' },
+    { value: 'fr', label: 'France' },
+    { value: 'de', label: 'Germany' },
+    { value: 'es', label: 'Spain' },
+    { value: 'it', label: 'Italy' },
+    { value: 'jp', label: 'Japan' },
+  ]
+
+  const timezones = [
+    { value: 'utc-3', label: 'America/Brasilia' },
+    { value: 'utc-4', label: 'America/Cuiabá' },
+  ]
   return (
     <>
       <h1 className='text-3xl font-medium text-zinc-900'>Settings</h1>
@@ -115,6 +130,15 @@ export default function Home() {
             >
               Country
             </label>
+            <Select placeholder='Select a country...'>
+              {countries.map((country) => (
+                <SelectItem
+                  key={country.value}
+                  value={country.value}
+                  text={country.label}
+                />
+              ))}
+            </Select>
           </div>
 
           {/* TIMEZONE */}
@@ -125,6 +149,15 @@ export default function Home() {
             >
               Timezone
             </label>
+            <Select placeholder='Select a timezone...'>
+              {timezones.map((timezone) => (
+                <SelectItem
+                  key={timezone.value}
+                  value={timezone.value}
+                  text={timezone.label}
+                />
+              ))}
+            </Select>
           </div>
 
           {/* BIO */}
