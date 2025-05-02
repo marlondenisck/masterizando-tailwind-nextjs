@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@radix-ui/react-select": "^2.2.2",
     "@radix-ui/react-tabs": "^1.1.4",
     "lucide-react": "^0.487.0",
