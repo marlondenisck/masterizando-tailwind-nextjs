@@ -18,3 +18,11 @@
   --color-error-800: #912018;
   --color-error-900: #7a271a;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+}
